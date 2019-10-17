@@ -26,6 +26,7 @@ function renderBooks() {
 function onRemoveBook(bookId) {
     var isSure = confirm('Are you sure?')
     if (!isSure) return;
+	console.log('hi')
     removeBook(bookId);
     renderBooks();
 }
