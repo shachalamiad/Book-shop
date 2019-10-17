@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/*---fonts----*/
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: euroforenceregular;
+    src: url('../fonts/euroforenceregular/eurof55.ttf');
+}
+
+/* main */
+
+body {
+    background-color: antiquewhite;
+    min-height: 100vh;;
+    position: relative;
+    margin: 0;  
+}
+
+.books-data {
+    width: min-content;
+    text-align: -webkit-center;
+}
+
+.header {
+    background-color: lightskyblue;
+    color: azure;
+    font-size: 1.5em;
+    font: 600;
+    font-family: euroforenceregular;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-items:stretch;
+    justify-content: space-around;
+    font-family: euroforenceregular;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-item {
+    font: 900;
+}
+
+
+.table-header {
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: row;
+    border: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.list-body {
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.footer {
+    background-color: honeydew;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5em;
+    text-align: center;
+    /* height: 15vh; */
+}
+
+.cell {
+    padding: 0.2em;
+    min-width: 10rem;
+    border-style: ridge;
+
+}
+
+.buttons {
+    font-display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+}
+
+.add-book {
+    background-color: khaki;
+    padding: 2em;
+    margin: 0.5em;
+    display:none;
+    max-width: max-content;
+}
+
+.add-book-button {
+background-color: moccasin;
+margin: 2em;
+}
+
+.read-book-modal {
+    background-color: silver;
+    display: block;
+}
+
+.close-modal-btn {
+    background-color: tomato;
+    display: none;
+}
+
+
+/* helpers */
+.clean-list {
+    list-style-type: none;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}

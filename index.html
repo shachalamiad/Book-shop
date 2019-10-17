@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()">
+    <header class="header">Open Library</header>
+    <nav>
+        <ul class="nav-bar clean-list">
+            <li class="nav-item">Browse</li>
+            <li class="nav-item">My books</li>
+            <li class="nav-item">Log In</li>
+            <li class="nav-item">Sign Up</li>
+        </ul>
+    </nav>
+    <div class="books-data">
+        <div class="table-header">
+            <div class="cell">Book id</div>
+            <div class="cell">Title</div>
+            <div class="cell">Price</div>
+            <div class="cell">Activity</div>
+        </div>
+        <div class="table-content">
+        </div>
+
+    </div>
+    <button class="add-book-button" onclick="onAddBook()">Add a new book</button>
+    <div class="add-book">
+    </div>
+
+    <div class="read-book-modal">
+        <button class="close-modal-btn" onclick="closeReadBookModal()">x</button>
+        <div class="read-book"></div>
+    </div>
+
+    <footer class="footer">cofee-rights</footer>
+
+    <script src="js/util-books-service.js"></script>
+    <script src="js/books service.js"></script>
+    <script src="js/books controller.js"></script>
+</body>
+
+</html>
